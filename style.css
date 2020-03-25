@@ -1,0 +1,489 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;	
+	background-image: url(img/bg4.jpg);
+	height: 100%;
+}
+
+#shapka {
+	width: 100%;
+	height: 80px;
+	background: rgb(49, 199, 49);
+	border-radius: 40px;
+	
+}
+
+#logo {
+	width: 430px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+#logo img {
+	width: 200px;
+    position: absolute;
+    top: -62px;
+    left: 3px;
+}
+
+#logo span {
+	font-size: 40px;
+    position: absolute;
+    top: 27px;
+	left: 212px;
+	width: fit-content;
+    
+}
+
+#menu {
+	float: right;
+	height: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 19px;
+    display: block;
+    float: left;
+    color: rgb(45, 73, 39);
+    padding: 28px 8px 0;
+    height: calc(100% - 28px);
+}
+
+#menu a:hover {
+	/*background: green;*/
+	color: rgb(98, 255, 0);
+}
+
+#content {
+	display: block;
+	width: 800px;
+	height: calc(100% - 120px);
+	margin: 0 auto;
+	background: rgb(217, 249, 209);
+	border-radius: 40px;
+	overflow: hidden;
+	
+}
+
+.warning {
+	position: absolute;
+	top: 500px;
+	color: red;
+	font-size: 30px;
+	text-align: center;
+}
+
+#users {
+	width: 235px;
+	height: 100%;
+	float: left;
+}
+
+#poisk {
+	height: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#poisk button {
+	width: 38px;
+    height: 30px;
+    border: none;
+    background: #99cc00;
+    outline: none;
+    cursor: pointer;
+	border-radius: 14px;
+	position: absolute;
+	
+}
+
+#poisk input {
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    height: 100%;
+    border-radius: 16px;
+}
+
+#poisk img {
+	width: 112%;
+    height: 102%;
+}
+
+#spisok {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+	border-radius: 40px;
+}
+/*стиль скрола */
+#spisok::-webkit-scrollbar-track,
+#sms::-webkit-scrollbar-track,
+#contacts-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#spisok::-webkit-scrollbar,
+#sms::-webkit-scrollbar,
+#contacts-content::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar-thumb,
+#contacts-content::-webkit-scrollbar-thumb,
+#sms::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#4D9C41),
+									   to(#19911D),
+									   color-stop(.6,#54DE5D))
+}
+/*стиль скрола закончился*/
+
+#spisok ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+}
+
+#spisok ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+#spisok ul li {
+	padding: 10px;
+	position: relative;
+	width: calc(100% - 25px);
+}
+
+#spisok ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#spisok ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#spisok ul li .time {
+	position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+#spisok h2 {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#spisok p {
+	margin: 0;
+}
+/* ================== Переписка с пользователем =========================*/
+#message {
+	width: calc(800px - 235px);
+	float: right;
+	height: 100%;
+	padding-top: 40px;
+}
+#sms {
+	height: 75%;
+	overflow-y: auto;
+	border-radius: 40px;
+}
+
+#sms ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+#message ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#message ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#message ul .avatar img {
+	width: 100%;
+	height: 100%;
+
+}
+#message ul li {
+	position: relative;
+	padding: 10px;
+}
+
+#message ul h2,
+#message ul p {
+	margin: 0;
+}
+
+#message ul .time {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+/*============= Форма сообещения ===================*/
+
+#form-sms button {
+	border: 0;
+	background: none;
+	outline: none;
+	height: 80%;
+	width: 50px;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+
+}
+
+#form-sms {
+	position: relative;
+	padding: 10px;
+	height: calc(23% - 20px);
+}
+
+#form-sms textarea {
+	padding: 10px;
+	height: 60%;
+	width: 80%;
+	margin-right: 0;
+	border-radius: 20px;
+	border: none;
+}
+
+/*=============== стили для модальных окон =========== */
+.modal {
+	display: none;
+	position: absolute;
+	top: 150px;
+	left: calc(50% - 200px);
+	width: 360px;
+	background: rgb(5, 13, 0);
+	border: 3px solid chartreuse;
+	box-shadow: 0px 0px 12px 4px chartreuse;
+	border-radius: 20px;
+	padding: 20px;
+	max-height: 400px;
+	color: #c3c3c3;
+	z-index: 9999;
+	
+}
+.modal .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.modal .close:hover {
+	color: #16c016;
+}
+
+.modal .closeModal {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.modal .closeModal:hover {
+	color: #16c016;
+}
+
+.modal #contacts-content {
+	overflow-y: auto;
+	margin-top: 20px;
+	height: 380px;
+}
+
+/* ============= модальное контакт окно ============== */
+#contacts-modal ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 15px;
+	width: 320px;
+}
+
+#contacts-modal ul .avatar {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+#contacts-modal ul .avatar img {
+	width: 100%;
+	height: 100%;
+
+}
+#contacts-modal ul li {
+	position: relative;
+	padding: 15px;
+}
+
+#contacts-modal ul h2 {
+	margin: 10px;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	color: white;
+}
+
+#contacts-modal ul a {
+	margin: 30px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+	color:chartreuse;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#contacts-modal .del {
+	margin: 30px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+	color: red;
+	cursor: pointer;
+	text-decoration: none;
+}
+/* ================= Модальный вход ================== */
+
+#modalReg {
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: calc(50% - 200px);
+	width: 360px;
+	background: rgb(2, 11, 2);
+	border: 3px solid chartreuse;
+	box-shadow: 0px 0px 12px 4px chartreuse;
+	border-radius: 20px;
+	padding: 20px;
+	height: 200px;
+	
+}
+
+.cool {
+	position: absolute;
+	top: 370px;
+	left: calc(50% - 500px);
+	color: red;
+	font-size: 50px;
+}
+
+#modalReg .closeEnter {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	color: rgb(97, 241, 7);
+}
+
+#modalReg .closeEnter:hover {
+	color: #16c016;
+}
+
+#modalReg h2  {
+	position: absolute;
+	top: -10px;
+	left: 130px;
+	color: white;
+}
+
+#modalReg .name {
+	top: 0px;
+	left: 50px;
+	color: white;
+}
+
+#modalReg .post {
+	top: 50px;
+	left: 50px;
+	color: white;
+}
+
+#modalReg .pass {
+	top: 0px;
+	left: 130px;
+	color: white;
+}
+
+.btnReg {
+	position: absolute;
+	top: 70px;
+	right: 30px;
+	height: 50px;
+	width: 140px;
+	font-size: 19px;
+	border: none;
+	background: #16c016;
+    color: white;
+	border-radius: 7px;
+	
+}
+
+.btnReg a {
+	color: white;
+	text-decoration: none;
+}
+.btnReg:hover a {
+	background: rgb(2, 11, 2);
+	color: white;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.btnReg:hover {
+	background: rgb(2, 11, 2);
+	color: white;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.submit {
+	position: absolute;
+	top: 160px;
+	right: 50px;
+	height: 50px;
+	width: 80px;
+	font-size: 19px;
+	border: none;
+	background: #16c016;
+    color: white;
+    border-radius: 7px;
+}
+
+.submit:hover {
+	background: rgb(2, 11, 2);
+	color: white;
+	transition: 0.3s;
+}
